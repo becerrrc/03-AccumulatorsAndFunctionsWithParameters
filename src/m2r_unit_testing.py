@@ -8,7 +8,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Mark Hays,
 """
 ###############################################################################
 #
-# TODO: 1.
+# DONE: 1.
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -61,7 +61,6 @@ def distance(point):
     y_squared = point.y * point.x
 
     return math.sqrt(x_squared + y_squared)
-
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
