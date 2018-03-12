@@ -65,8 +65,9 @@ def sum_cosines(n):
       If n is 3, this function returns
         cos(0) + cos(1) + cos(2) + cos(3)   which is about 0.13416.
     """
+    total = 0
     for k in range(n):
-        total = math.cos(k)
+        total = total + math.cos(k)
 
     return total
 
@@ -136,8 +137,8 @@ def sum_square_roots(n):
     #   test cases; that would defeat the purpose of TESTING!
     # ------------------------------------------------------------------
     total = 0
-    if a in range(n+1):
-        total = total + math.sqrt(2 * a)
+    for a in range(n):
+        total = total + math.sqrt((2 * a) + 2)
 
     return total
 # ----------------------------------------------------------------------
